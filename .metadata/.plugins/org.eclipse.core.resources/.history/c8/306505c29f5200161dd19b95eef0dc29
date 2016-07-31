@@ -1,0 +1,10 @@
+package chapter2;
+
+import java.awt.event.ActionListener;
+import java.awt.event.MouseMotionListener;
+
+import javax.swing.JComponent;
+
+public class HelloComponent3 extends JComponent implements MouseMotionListener, ActionListener{
+	
+}
