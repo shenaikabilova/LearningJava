@@ -1,0 +1,18 @@
+public class Student extends Person {
+	private String fNumber;
+	
+	public Student(String name, String family, String fNumber) {
+		super(name, family);
+		this.fNumber = fNumber;
+	}
+
+	public String getfNumber() {
+		return fNumber;
+	}
+
+	public void setfNumber(String fNumber) {
+		this.fNumber = fNumber;
+	}
+	
+	
+}

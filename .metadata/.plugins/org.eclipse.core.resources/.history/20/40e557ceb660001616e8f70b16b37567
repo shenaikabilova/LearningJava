@@ -1,0 +1,9 @@
+abstract public class Person {
+	private String name;
+	private String family;
+	
+	public Person (String name, String family) {
+		this.name = name;
+		this.family = family;
+	}
+}
