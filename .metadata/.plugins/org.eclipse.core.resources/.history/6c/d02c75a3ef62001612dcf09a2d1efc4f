@@ -1,0 +1,39 @@
+import java.util.List;
+
+public class Group {
+	private int groupNumber;
+	private String spec;
+	private List<Student> students;
+	
+	public Group (int groupNumber, String spec, List<Student> students) {
+		this.groupNumber = groupNumber;
+		this.spec = spec;
+		this.students = students;
+	}
+
+	public int getGroupNumber() {
+		return groupNumber;
+	}
+
+	public void setGroupNumber(int groupNumber) {
+		this.groupNumber = groupNumber;
+	}
+
+	public String getSpec() {
+		return spec;
+	}
+
+	public void setSpec(String spec) {
+		this.spec = spec;
+	}
+
+	public List<Student> getStudents() {
+		for(Student s : students) {
+			return s.getName() + " " + s.getFamily() + " " + s.getfNumber() + " " + s.getMark();
+		}
+	}
+
+	public void setStudents(List<Student> students) {
+		this.students = students;
+	}
+}

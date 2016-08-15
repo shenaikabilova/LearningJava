@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;group&apos; in &apos;Main.main(...)&apos; to &apos;g&apos;&#x0D;&#x0A;- Original project: &apos;Student&apos;&#x0D;&#x0A;- Original element: &apos;Main.main(String[]).group&apos;&#x0D;&#x0A;- Renamed element: &apos;group&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;group&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Main.java[Main~main~\[QString;@group!604!650!618!622!QList\&lt;QStudent;&gt;;!0!false" name="g" references="true" stamp="1471268855435" version="1.0"/>
+</session>

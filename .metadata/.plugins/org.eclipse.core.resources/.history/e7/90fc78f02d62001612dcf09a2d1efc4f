@@ -1,0 +1,13 @@
+import java.util.List;
+
+public class Group {
+	private int groupNumber;
+	private String spec;
+	private List<Student> students;
+	
+	public Group (int groupNumber, String spec, List<Student> students) {
+		this.groupNumber = groupNumber;
+		this.spec = spec;
+		this.students = students
+	}
+}

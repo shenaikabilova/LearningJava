@@ -15,7 +15,9 @@ public class Main {
 		int students = input.nextInt();
 		
 		Teacher teacher = new Teacher(teacherName, teacherFamily, subject);
-		List<Student> group = new ArrayList<Student>();
+		List<Student> g = new ArrayList<Student>();
+		
+		Group group;
 		
 		while(students!=0) {
 			System.out.print("enter student name");
@@ -24,19 +26,18 @@ public class Main {
 			String family = input.next();
 			System.out.print("enter fNumber: ");
 			String fNumber = input.next();
-			System.out.print("enter spec: ");
-			String spec = input.next();
 			System.out.print("enter mark: ");
 			double mark = input.nextDouble();
 			
-			Student student = new Student(name, family, fNumber, spec, mark);
-			group.add(student);
+			Student student = new Student(name, family, fNumber, mark);
+			g.add(student);
 			
 			students--;
 		}
 		
-		for(Student s : group) {
-			System.out.println(s.getName() + " " + s.getFamily() + " " + s.getfNumber() + " " + s.getSpec() + " " + s.getMark());
+		group = new Group(1, "KST", g);
+		for(Student s: group.getStudents()){
+			System.out.println(s.getName());
 		}
 		
 		input.close();

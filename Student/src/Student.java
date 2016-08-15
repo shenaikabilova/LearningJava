@@ -1,12 +1,10 @@
 public class Student extends Person {
 	private String fNumber;
-	private String spec;
 	private double mark;
 	
-	public Student(String name, String family, String fNumber, String spec, double mark) {
+	public Student(String name, String family, String fNumber, double mark) {
 		super(name, family);
 		this.fNumber = fNumber;
-		this.spec = spec;
 		this.mark = mark;
 	}
 
@@ -16,14 +14,6 @@ public class Student extends Person {
 
 	public void setfNumber(String fNumber) {
 		this.fNumber = fNumber;
-	}
-	
-	public String getSpec() {
-		return spec;
-	}
-	
-	public void setSpec (String spec) {
-		this.spec = spec;
 	}
 
 	public double getMark() {
