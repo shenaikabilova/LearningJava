@@ -1,0 +1,11 @@
+public class Exam {
+	Teacher teacher;
+	Subject subject;
+	Group group;
+	
+	public Exam (Teacher teacher; Subject subject; Group group) {
+		this.teacher = teacher;
+		this.subject = subject;
+		this.group = group;
+	}
+}

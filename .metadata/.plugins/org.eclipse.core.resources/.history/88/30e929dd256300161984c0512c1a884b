@@ -1,0 +1,8 @@
+public class SetExample {
+	public static void main(String[] args) {
+		Student s1 = new Student("Ê", "Ë", 123, 5.0);
+		Student s2 = new Student("À", "Á", 143, 5.0);
+		Student s3 = new Student("Å", "Ö", 133, 5,0);
+		
+	}
+}

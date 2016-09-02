@@ -1,4 +1,4 @@
-public class Student extends Person {
+public class Student extends Person implements Comparable<Student> {
 	private String fNumber;
 	private double mark;
 	
@@ -22,5 +22,11 @@ public class Student extends Person {
 
 	public void setMark(double mark) {
 		this.mark = mark;
+	}
+
+	@Override
+	public int compareTo(Student o) {
+		//return this.fNumber - o.getfNumber(); // if fN is int
+		return this.fNumber.compareTo(o.getfNumber()); // if fN is String
 	}
 }

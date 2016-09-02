@@ -1,0 +1,9 @@
+public class Exam {
+	Teacher teacher;
+	Subject subject;
+	Group group;
+	
+	public Exam (Teacher teacher; Subject subject, Group group) {
+		
+	}
+}
