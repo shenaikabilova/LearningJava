@@ -1,0 +1,24 @@
+package view;
+
+import java.util.Scanner;
+
+public class View {
+	Scanner input = new Scanner(System.in);
+	String teacherName;
+	
+	public void addNewTeacher() {
+		System.out.print("enter teacher name: ");
+		teacherName = input.nextLine();
+		System.out.print("enter teacher family: ");
+		String teacherFamily = input.nextLine();
+	}
+	
+	public void addNewSubject() {
+		System.out.print("enter subject: ");
+		String sub = input.nextLine();
+	}
+	
+	public void addNewStudents() {
+		
+	}
+}

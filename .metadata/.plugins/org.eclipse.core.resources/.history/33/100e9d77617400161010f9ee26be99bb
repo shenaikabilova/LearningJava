@@ -1,0 +1,32 @@
+package controller;
+
+import view.View;
+import model.Group;
+import model.Student;
+import model.Subject;
+import model.Teacher;
+
+public class Controller {
+	private Teacher teacher;
+	private Subject subject;
+	private Student student;
+	private Group group;
+	private View view;
+	
+	public Controller (View view) {
+		this.view = view;
+	}
+	
+	public void addTeacher (String name, String family) {
+		teacher.setName(name);
+		teacher.setFamily(family);
+	}
+	
+	public void addSubject (String subjectName) {
+		subject.setSubjectName(subjectName);
+	}
+	
+	public void addStudentsGroup (String groupName) {
+		group.setGroupName(groupName);
+	}
+}

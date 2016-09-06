@@ -1,0 +1,40 @@
+package view;
+
+import java.util.Scanner;
+
+public class View {
+	Scanner input = new Scanner(System.in);
+	String teacherName;
+	String teacherFamily;
+	String sub;
+	int students;
+	
+	public void addNewTeacher() {
+		System.out.print("enter teacher name: ");
+		teacherName = input.nextLine();
+		System.out.print("enter teacher family: ");
+		teacherFamily = input.nextLine();
+	}
+	
+	public void addNewSubject() {
+		System.out.print("enter subject: ");
+		sub = input.nextLine();
+	}
+	
+	public void addNewStudents() {
+		System.out.print("enter studenst count: ");
+		students = input.nextInt();
+		
+		while(students!=0) {
+			System.out.print("enter student name");
+			String name = input.next();
+			System.out.print("enter student family");
+			String family = input.next();
+			System.out.print("enter fNumber: ");
+			//int fNumber = input.nextInt();
+			String fNumber = input.next();
+			System.out.print("enter mark: ");
+			double mark = input.nextDouble();
+		}
+	}
+}

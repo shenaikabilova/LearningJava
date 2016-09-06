@@ -1,24 +1,30 @@
 import java.util.Scanner;
-import java.util.SortedSet;
-import java.util.TreeSet;
+
+import controller.Controller;
+import view.View;
+import model.Group;
+import model.Student;
+import model.Subject;
+import model.Teacher;
 
 public class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		Controller controller = new Controller();
+		
 		System.out.print("enter teacher name: ");
 		String teacherName = input.nextLine();
 		System.out.print("enter teacher family: ");
 		String teacherFamily = input.nextLine();
+
 		System.out.print("enter subject: ");
 		String sub = input.nextLine();
+
+		System.out.println("enter group name: ");
+		String groupName = input.nextLine();
+		
 		System.out.print("enter studenst count: ");
 		int students = input.nextInt();
-		
-		Teacher teacher = new Teacher(teacherName, teacherFamily);
-		SortedSet<Student> set = new TreeSet<Student>();
-		Subject subject = new Subject(sub);
-		Group group;
-		Exam exam;
 		
 		while(students!=0) {
 			System.out.print("enter student name");
@@ -31,18 +37,14 @@ public class Main {
 			System.out.print("enter mark: ");
 			double mark = input.nextDouble();
 			
-			Student student = new Student(name, family, fNumber, mark);
-			set.add(student);
+			controller.addStudent(name, family, fNumber, mark);
 			
 			students--;
 		}
 		
-		group = new Group(1, "KST", set);
-		exam = new Exam(teacher, subject, group);
-		
-		for(Student s : group.getStudents()) {
-			System.out.println(s.getName() + " " + s.getfNumber() + " " + s.getfNumber() + " " + s.getMark());
-		}
+		controller.addTeacher(teacherName, teacherFamily);
+		controller.addSubject(sub);
+		controller.addStudentsGroup(groupName);
 		
 		input.close();
 	}

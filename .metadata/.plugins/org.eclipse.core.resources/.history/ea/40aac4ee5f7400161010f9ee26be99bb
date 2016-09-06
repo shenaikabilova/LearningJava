@@ -1,0 +1,13 @@
+package controller;
+
+import model.Student;
+import model.Subject;
+import model.Teacher;
+
+public class Controller {
+	private Teacher teacher;
+	private Subject subject;
+	private Student student;
+	
+	
+}

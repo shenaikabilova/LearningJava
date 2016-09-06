@@ -1,0 +1,26 @@
+import java.util.SortedSet;
+
+public class Group {
+	private String groupName;
+	private SortedSet<Student> students;
+	
+	public Group (String groupName) {
+		this.groupName = groupName;
+	}
+
+	public String getSpec() {
+		return groupName;
+	}
+
+	public void setSpec(String spec) {
+		this.groupName = spec;
+	}
+
+	public SortedSet<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(Student student) {
+		students.add(student);
+	}
+}

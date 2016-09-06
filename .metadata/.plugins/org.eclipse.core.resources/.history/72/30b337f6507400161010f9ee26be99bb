@@ -1,0 +1,15 @@
+package view;
+
+public class View {
+	public void addNewTeacher() {
+		
+	}
+	
+	public void addNewSubject() {
+		
+	}
+	
+	public void addNewStudents() {
+		
+	}
+}

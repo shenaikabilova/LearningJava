@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+import view.View;
+import model.Group;
+import model.Student;
+import model.Subject;
+import model.Teacher;
+
+public class Main {
+	public static void main(String[] args) {
+		View view = new View();
+		
+	}
+}
