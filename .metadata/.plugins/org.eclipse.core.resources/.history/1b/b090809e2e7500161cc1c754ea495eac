@@ -1,0 +1,21 @@
+package controller;
+
+import view.StudentView;
+import model.Student;
+
+public class StudentController {
+	private Student student;
+	private StudentView view;
+	
+	public StudentController (StudentView view) {
+		this.view = view;
+	}
+	
+	public void addStudent (String name, String family, String fNumber, double mark) {
+		new Student(name, family, fNumber, mark);
+	}
+	
+	public void printStudent () {
+		view.printStudent(student.getName(), student.getFamily(), student.getfNumber(), student.getMark());
+	}
+}

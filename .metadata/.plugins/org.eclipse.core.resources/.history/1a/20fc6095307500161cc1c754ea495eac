@@ -1,0 +1,29 @@
+package view;
+
+import java.util.Scanner;
+
+public class StudentView {
+	private 
+
+	public StudentView () {
+
+	}
+	
+	public void addNewStudents() {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("enter student name");
+		String name = input.next();
+		System.out.print("enter student family");
+		String family = input.next();
+		System.out.print("enter fNumber: ");
+		//int fNumber = input.nextInt();
+		String fNumber = input.next();
+		System.out.print("enter mark: ");
+		double mark = input.nextDouble();
+	}
+	
+	public void printStudent (String name, String family, String fn, double mark) {
+		System.out.println(name + " " + family + " " + fn + " " + mark);
+	}
+}
