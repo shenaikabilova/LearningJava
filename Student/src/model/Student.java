@@ -1,9 +1,9 @@
 package model;
 public class Student extends Person implements Comparable<Student> {
 	private String fNumber;
-	private double mark;
+	private int mark;
 	
-	public Student(String name, String family, String fNumber, double mark) {
+	public Student(String name, String family, String fNumber, int mark) {
 		super(name, family);
 		this.fNumber = fNumber;
 		this.mark = mark;
@@ -17,11 +17,11 @@ public class Student extends Person implements Comparable<Student> {
 		this.fNumber = fNumber;
 	}
 
-	public double getMark() {
+	public int getMark() {
 		return mark;
 	}
 
-	public void setMark(double mark) {
+	public void setMark(int mark) {
 		this.mark = mark;
 	}
 

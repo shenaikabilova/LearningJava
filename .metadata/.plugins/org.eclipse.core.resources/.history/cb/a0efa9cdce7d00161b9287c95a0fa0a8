@@ -1,0 +1,26 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import model.Student;
+import view.StudentView;
+
+public class StudentController implements ActionListener {
+	private Student student;
+	private StudentView view;
+	
+	public StudentController (StudentView view) {
+		this.view = view;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		view.buttonAdd(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				student = new Student(view.getStudentName(), view.getStudentFamily(), fNumber, mark)
+			}
+		});
+	}
+}

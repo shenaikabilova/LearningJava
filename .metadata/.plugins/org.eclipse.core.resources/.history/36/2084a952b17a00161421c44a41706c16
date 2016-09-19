@@ -1,0 +1,15 @@
+package view;
+
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class MainWindow {
+	private JMenuBar menuMenu;
+	private JMenu menu;
+	private JMenuItem menuItem;
+	
+	public MainWindow () {
+		
+	}
+}

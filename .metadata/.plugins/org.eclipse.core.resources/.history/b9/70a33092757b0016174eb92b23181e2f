@@ -1,0 +1,16 @@
+import javax.swing.SwingUtilities;
+
+import view.MainWindow;
+import view.StudentViewConsole;
+import view.TeacherView;
+import controller.StudentController;
+
+public class Example {
+	public static void main(String[] args) {
+//		StudentController c = new StudentController(new StudentViewConsole());
+//		c.addStudent();
+//		c.printStudent();
+		
+		SwingUtilities.invokeLater(new MainWindow());
+	}
+}

@@ -1,0 +1,14 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class StudentView extends JFrame implements Runnable {
+	private JPanel panel;
+	
+	
+	@Override
+	public void run() {
+		setVisible(true);
+	}
+}

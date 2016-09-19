@@ -1,0 +1,9 @@
+package view;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class SubjectView {
+	private JPanel panel;
+	private JLabel labelSubject = new JLabel("Subject");
+}

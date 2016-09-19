@@ -1,7 +1,0 @@
-import java.util.List;
-
-public class Group {
-	private int groupNumber;
-	private String spec;
-	private List<Student> students;
-}

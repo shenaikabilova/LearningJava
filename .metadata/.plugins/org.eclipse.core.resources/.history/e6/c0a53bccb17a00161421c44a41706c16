@@ -1,0 +1,24 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class MainWindow extends JFrame implements Runnable{
+	private JPanel panel
+	private JMenuBar menuBar = new JMenuBar();
+	private JMenu menuAdd = new JMenu("Add");
+	private JMenuItem menuItemAddTeacher = new JMenuItem("Add teacher");
+	
+	public MainWindow () {
+		menuBar.add(menuAdd);
+		menuAdd.add(menuItemAddTeacher);
+	}
+
+	@Override
+	public void run() {
+		setVisible(true);
+	}
+}

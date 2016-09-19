@@ -1,0 +1,23 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class StudentView extends JFrame implements Runnable {
+	private JPanel panel;
+	private JLabel labelStudentName = new JLabel("Name:");
+	private JLabel labelStudentFamily = new JLabel("Family");
+	private JLabel labelStudentFn = new JLabel("Fak. number");
+	private JLabel labelStudentMark = new JLabel("Mark");
+	private JTextField textFieldStudentName = new JTextField("");
+	private JTextField textFieldStudentFamily = new JTextField("");
+	private JTextField textFieldStudentFn = new JTextField("");
+	private JTextField textFieldStudentMark = new JTextField("");
+	
+	@Override
+	public void run() {
+		setVisible(true);
+	}
+}

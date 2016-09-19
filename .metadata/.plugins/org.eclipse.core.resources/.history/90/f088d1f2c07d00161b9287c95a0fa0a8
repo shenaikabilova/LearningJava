@@ -1,0 +1,15 @@
+package controller;
+
+import java.awt.event.ActionListener;
+
+import view.StudentView;
+
+public class StudentController implements ActionListener {
+	private StudentView view;
+	
+	public StudentController (StudentView view) {
+		this.view = view;
+	}
+	
+	
+}

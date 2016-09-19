@@ -1,8 +1,0 @@
-import view.StudentView;
-import controller.Controller;
-
-public class Example {
-	public static void main(String[] args) {
-		Controller c = new Controller(new StudentView());
-	}
-}

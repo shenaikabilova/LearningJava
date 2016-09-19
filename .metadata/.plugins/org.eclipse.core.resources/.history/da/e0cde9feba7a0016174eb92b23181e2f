@@ -1,0 +1,14 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class SubjectView extends JFrame{
+	private JPanel panel;
+	private JLabel labelSubject = new JLabel("Subject");
+	private JTextField textFieldSubject = new JTextField("");
+	
+	
+}

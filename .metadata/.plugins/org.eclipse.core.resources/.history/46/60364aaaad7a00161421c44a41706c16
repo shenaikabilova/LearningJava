@@ -1,0 +1,12 @@
+package view;
+
+import javax.swing.JLabel;
+
+public class TeacherView {
+	private JLabel labelTeacherName = new JLabel("Name");
+	private JLabel labelTeacherFamily = new JLabel("Family");
+	
+	public TeacherView() {
+		setTitle("Add new teacher");
+	}
+}

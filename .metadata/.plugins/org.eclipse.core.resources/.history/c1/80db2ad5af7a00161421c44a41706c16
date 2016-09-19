@@ -1,0 +1,50 @@
+package view;
+
+import java.awt.TextField;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class TeacherView extends JFrame implements Runnable{
+	private JPanel panel;
+	private JLabel labelTeacherName = new JLabel("Name");
+	private JLabel labelTeacherFamily = new JLabel("Family");
+	private JTextField textFieldTeacherName = new JTextField("");
+	private JTextField textFieldTeacherFamily = new JTextField("");
+	
+	private JButton buttonAdd = new JButton("Add");
+	
+	public TeacherView() {
+		setTitle("Add new teacher");
+		setSize(300, 200);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setResizable(false);
+		
+		this.panel = new JPanel();
+		panel.setLayout(null);
+		this.getContentPane().add(panel);
+		
+		labelTeacherName.setBounds(20, 20, 50, 30);
+		panel.add(labelTeacherName);
+		
+		labelTeacherFamily.setBounds(20, 50, 50, 30);
+		panel.add(labelTeacherFamily);
+		
+		textFieldTeacherName.setBounds(70, 20, 100, 25);
+		panel.add(textFieldTeacherName);
+		
+		textFieldTeacherFamily.setBounds(70, 50, 100, 25);
+		panel.add(textFieldTeacherFamily);
+		
+		buttonAdd.setBounds(20, 80, 50, 30);
+	}
+
+	@Override
+	public void run() {
+		setVisible(true);
+	}
+}

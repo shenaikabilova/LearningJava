@@ -1,0 +1,13 @@
+package controller;
+
+import view.StudentView;
+
+public class StudentController {
+	private StudentView view;
+	
+	public StudentController (StudentView view) {
+		this.view = view;
+	}
+	
+	
+}
