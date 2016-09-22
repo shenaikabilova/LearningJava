@@ -1,0 +1,12 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class GroupView extends JFrame implements Runnable{
+	private JLabel labelGroupName = new JLabel("Group name");
+	@Override
+	public void run() {
+		setVisible(true);
+	}
+}

@@ -1,0 +1,13 @@
+package controller;
+
+import view.GroupView;
+
+public class GroupController {
+	private GroupView view;
+	
+	public GroupController(GroupView view) {
+		this.view = view;
+	}
+	
+	
+}

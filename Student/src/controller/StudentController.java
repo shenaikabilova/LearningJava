@@ -19,7 +19,7 @@ public class StudentController implements ActionListener {
 		view.buttonAdd(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new Student(view.getStudentName(), view.getStudentFamily(), view.getStudentFn(), Integer.parseInt(view.getStudentMark()));
+				new Student(view.getStudentName(), view.getStudentFamily(), view.getStudentFn()/*, Integer.parseInt(view.getStudentMark())*/);
 			}
 		});
 		

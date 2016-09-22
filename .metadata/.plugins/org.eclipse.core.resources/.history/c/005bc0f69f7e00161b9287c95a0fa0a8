@@ -1,0 +1,22 @@
+package view;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class GroupView extends JFrame implements Runnable{
+	private JLabel labelGroupName = new JLabel("Group name");
+	private JTextField textFieldGroupName = new JTextField("");
+	
+	public GroupView() {
+		setTitle("New group");
+		setSize(400, 300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setResizable(false);
+	}
+	
+	@Override
+	public void run() {
+		setVisible(true);
+	}
+}

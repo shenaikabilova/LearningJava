@@ -1,0 +1,11 @@
+package controller;
+
+import view.SubjectView;
+
+public class SubjectController {
+	private SubjectView view;
+	
+	public SubjectController(SubjectView view) {
+		this.view = view;
+	}
+}

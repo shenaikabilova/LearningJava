@@ -1,0 +1,12 @@
+package view;
+
+import javax.swing.JFrame;
+
+public class GroupView extends JFrame implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

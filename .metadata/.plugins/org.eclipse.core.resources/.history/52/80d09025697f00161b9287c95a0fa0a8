@@ -1,0 +1,19 @@
+package controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import view.MainWindow;
+
+public class MainWindowController implements ActionListener{
+	private MainWindow view;
+	
+	public MainWindowController(MainWindow view) {
+		this.view = view;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}	
+}

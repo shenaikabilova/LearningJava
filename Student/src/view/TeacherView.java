@@ -1,5 +1,7 @@
 package view;
 
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -45,6 +47,22 @@ public class TeacherView extends JFrame implements Runnable{
 		
 		buttonExit.setBounds(200, 60, 80, 30);
 		panel.add(buttonExit);
+	}
+	
+	public String getTeacherName(){
+		return textFieldTeacherName.getText();
+	}
+	
+	public String getTeacherFamily(){
+		return textFieldTeacherFamily.getText();
+	}
+	
+	public void buttonAddActionListener(ActionListener listener){
+		buttonAdd.addActionListener(listener);
+	}
+	
+	public void buttonExitActionListener(ActionListener listener){
+		buttonExit.addActionListener(listener);
 	}
 
 	@Override

@@ -1,12 +1,12 @@
 package model;
 public class Student extends Person implements Comparable<Student> {
 	private String fNumber;
-	private int mark;
+//	private int mark;
 	
-	public Student(String name, String family, String fNumber, int mark) {
+	public Student(String name, String family, String fNumber/*, int mark */) {
 		super(name, family);
 		this.fNumber = fNumber;
-		this.mark = mark;
+//		this.mark = mark;
 	}
 
 	public String getfNumber() {
@@ -17,13 +17,13 @@ public class Student extends Person implements Comparable<Student> {
 		this.fNumber = fNumber;
 	}
 
-	public int getMark() {
-		return mark;
-	}
-
-	public void setMark(int mark) {
-		this.mark = mark;
-	}
+//	public int getMark() {
+//		return mark;
+//	}
+//
+//	public void setMark(int mark) {
+//		this.mark = mark;
+//	}
 
 	@Override
 	public int compareTo(Student o) {

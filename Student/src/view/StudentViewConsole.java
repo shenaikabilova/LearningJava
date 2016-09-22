@@ -21,8 +21,8 @@ public class StudentViewConsole {
 		mark = input.nextInt();
 	}
 	
-	public void printStudent (String name, String family, String fn, double mark) {
-		System.out.println(name + " " + family + " " + fn + " " + mark);
+	public void printStudent (String name, String family, String fn/*, double mark*/) {
+		System.out.println(name + " " + family + " " + fn /*+ " " + mark*/);
 	}
 	
 	public String getStudentName () {

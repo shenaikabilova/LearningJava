@@ -7,25 +7,25 @@ import java.util.TreeSet;
 
 public class SetExample {
 	public static void main(String[] args) {
-		Student s1 = new Student("Ê", "Ë", "123", 5);
-		Student s2 = new Student("À", "Á", "143", 5);
-		Student s3 = new Student("Å", "Ö", "133", 5);
-		Student s4 = new Student("Ï", "À", "125", 5);
-		Student s5 = new Student("Â", "Î", "555", 5);
-		Student s6 = new Student("Ø", "Á", "111", 5);
-		
-		SortedSet<Student> set = new TreeSet<Student>();
-		//Set<Student> set = new LinkedHashSet<Student>();
-		set.add(s1);
-		set.add(s2);
-		set.add(s3);
-		set.add(s4);
-		set.add(s5);
-		set.add(s6);
-		
-		for(Student s : set) {
-			System.out.println(s.getName() + " " + s.getFamily() + " " + s.getfNumber() + " " + s.getMark());
-		}
+//		Student s1 = new Student("Ê", "Ë", "123", 5);
+//		Student s2 = new Student("À", "Á", "143", 5);
+//		Student s3 = new Student("Å", "Ö", "133", 5);
+//		Student s4 = new Student("Ï", "À", "125", 5);
+//		Student s5 = new Student("Â", "Î", "555", 5);
+//		Student s6 = new Student("Ø", "Á", "111", 5);
+//		
+//		SortedSet<Student> set = new TreeSet<Student>();
+//		//Set<Student> set = new LinkedHashSet<Student>();
+//		set.add(s1);
+//		set.add(s2);
+//		set.add(s3);
+//		set.add(s4);
+//		set.add(s5);
+//		set.add(s6);
+//		
+//		for(Student s : set) {
+//			System.out.println(s.getName() + " " + s.getFamily() + " " + s.getfNumber() + " " + s.getMark());
+//		}
 
 //		int a = 5;
 //		int b = a;

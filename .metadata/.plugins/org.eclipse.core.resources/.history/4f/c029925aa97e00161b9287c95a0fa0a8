@@ -1,0 +1,15 @@
+package controller;
+
+import java.awt.event.ActionListener;
+
+import view.GroupView;
+
+public class GroupController implements ActionListener {
+	private GroupView view;
+	
+	public GroupController(GroupView view) {
+		this.view = view;
+	}
+	
+	
+}
