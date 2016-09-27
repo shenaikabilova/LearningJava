@@ -8,7 +8,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 @SuppressWarnings("serial")
-public class MainWindow extends JFrame implements Runnable{
+public class MainWindow extends JFrame {
 	private JFrame frame;
 	
 	private JMenuBar menuBar = new JMenuBar();
@@ -41,7 +41,6 @@ public class MainWindow extends JFrame implements Runnable{
 	}
 
 	public void addTeacherActionListener(ActionListener listener){
-		System.out.println("view");
 		menuItemAddTeacher.addActionListener(listener);
 	}
 	
@@ -59,10 +58,5 @@ public class MainWindow extends JFrame implements Runnable{
 	
 	public void exitActionListener(ActionListener listener){
 		menuExit.addActionListener(listener);
-	}
-	
-	@Override
-	public void run() {
-		setVisible(true);
 	}
 }

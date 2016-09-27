@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 
 import model.Subject;
 
-public class SubjectView extends JFrame implements Runnable{
+public class SubjectView extends JFrame {
 	private JPanel panel;
 	private JLabel labelSubject = new JLabel("Subject");
 	private JTextField textFieldSubject = new JTextField("");
@@ -52,10 +52,5 @@ public class SubjectView extends JFrame implements Runnable{
 	
 	public void buttonExitActionListener(ActionListener listener) {
 		buttonExit.addActionListener(listener);
-	}
-
-	@Override
-	public void run() {
-		setVisible(true);
 	}
 }

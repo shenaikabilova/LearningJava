@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 
 import model.Group;
 
-public class StudentView extends JFrame implements Runnable {
+public class StudentView extends JFrame {
 	private JPanel panel;
 	private int[] marks = {2, 3, 4, 5, 6};
 	
@@ -37,6 +37,7 @@ public class StudentView extends JFrame implements Runnable {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(false);
+		setVisible(true);
 		
 		panel = new JPanel();
 		panel.setLayout(null);
@@ -108,10 +109,5 @@ public class StudentView extends JFrame implements Runnable {
 	
 	public void buttonExit(ActionListener bExit) {
 		buttonExit(bExit);
-	}
-	
-	@Override
-	public void run() {
-		setVisible(true);
 	}
 }

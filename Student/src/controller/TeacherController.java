@@ -12,6 +12,9 @@ public class TeacherController implements ActionListener {
 	
 	public TeacherController(TeacherView view) {
 		this.view = view;
+		
+		this.view.buttonAddActionListener(this);
+		this.view.buttonExitActionListener(this);
 	}
 
 	@Override

@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 @SuppressWarnings("serial")
-public class TeacherView extends JFrame implements Runnable{
+public class TeacherView extends JFrame {
 	private JPanel panel;
 	private JLabel labelTeacherName = new JLabel("Name");
 	private JLabel labelTeacherFamily = new JLabel("Family");
@@ -25,6 +25,7 @@ public class TeacherView extends JFrame implements Runnable{
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(false);
+		setVisible(true);
 		
 		this.panel = new JPanel();
 		panel.setLayout(null);
@@ -63,10 +64,5 @@ public class TeacherView extends JFrame implements Runnable{
 	
 	public void buttonExitActionListener(ActionListener listener){
 		buttonExit.addActionListener(listener);
-	}
-
-	@Override
-	public void run() {
-		setVisible(true);
 	}
 }

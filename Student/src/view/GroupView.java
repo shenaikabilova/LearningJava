@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class GroupView extends JFrame implements Runnable{
+public class GroupView extends JFrame {
 	private JPanel panel;
 	
 	private JLabel labelGroupName = new JLabel("Group name");
@@ -23,6 +23,7 @@ public class GroupView extends JFrame implements Runnable{
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(false);
+		setVisible(true);
 		
 		this.panel = new JPanel();
 		panel.setLayout(null);
@@ -51,10 +52,5 @@ public class GroupView extends JFrame implements Runnable{
 	
 	public void buttonExitActionLisner (ActionListener listener) {
 		buttonExit.addActionListener(listener);
-	}
-	
-	@Override
-	public void run() {
-		setVisible(true);
 	}
 }

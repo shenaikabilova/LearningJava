@@ -12,6 +12,9 @@ public class SubjectController implements ActionListener {
 	
 	public SubjectController(SubjectView view) {
 		this.view = view;
+		
+		this.view.buttonAddActionListener(this);
+		this.view.buttonExitActionListener(this);
 	}
 
 	@Override

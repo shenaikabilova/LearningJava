@@ -13,8 +13,13 @@ public class MainWindowController implements ActionListener{
 	private MainWindow view;
 	
 	public MainWindowController(MainWindow view) {
-		System.out.println("aaa");
 		this.view = view;
+		
+		this.view.addTeacherActionListener(this);
+		this.view.addGroupActionListener(this);
+		this.view.addStudentActionListener(this);
+		this.view.addSubjectActionListener(this);
+		this.view.exitActionListener(this);
 	}
 
 	@Override
@@ -22,7 +27,6 @@ public class MainWindowController implements ActionListener{
 		view.addTeacherActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("controller");
 				TeacherView v = new TeacherView();
 				v.setVisible(true);
 				new TeacherController(v);

@@ -12,6 +12,9 @@ public class GroupController implements ActionListener {
 	
 	public GroupController(GroupView view) {
 		this.view = view;
+		
+		this.view.buttonAddActionLitener(this);
+		this.view.buttonExitActionLisner(this);
 	}
 
 	@Override
