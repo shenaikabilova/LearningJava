@@ -59,4 +59,12 @@ public class MainWindow extends JFrame {
 	public void exitActionListener(ActionListener listener){
 		menuExit.addActionListener(listener);
 	}
+	
+	public JFrame getFrame() {
+		return this;
+	}
+	
+	public String getTitle() {
+		return frame.getTitle();
+	}
 }

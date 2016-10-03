@@ -29,6 +29,7 @@ public class TeacherController implements ActionListener {
 		view.buttonExitActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				view.setVisible(false);
 				new MainWindowController(new MainWindow());
 			}
 		});

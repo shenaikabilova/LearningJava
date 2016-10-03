@@ -3,12 +3,15 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JDialog;
+
 import model.Student;
 import view.MainWindow;
 import view.StudentView;
 
 public class StudentController implements ActionListener {
 	private StudentView view;
+	private JDialog dialog = null;
 	
 	public StudentController (StudentView view) {
 		this.view = view;
@@ -29,6 +32,10 @@ public class StudentController implements ActionListener {
 		view.buttonExit(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+//				MainWindow m = new MainWindow();
+//				dialog = new JDialog(m.getFrame(), m.getTitle(), false);
+//				dialog.add(view);
+//				dialog.setVisible(true);
 				new MainWindowController(new MainWindow());
 			}
 		});

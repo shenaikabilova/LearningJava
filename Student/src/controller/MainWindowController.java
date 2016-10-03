@@ -1,7 +1,11 @@
 package controller;
 
+import java.awt.Dialog;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.JDialog;
+import javax.swing.WindowConstants;
 
 import view.GroupView;
 import view.MainWindow;
@@ -11,6 +15,7 @@ import view.TeacherView;
 
 public class MainWindowController implements ActionListener{
 	private MainWindow view;
+	private JDialog dialog = null;
 	
 	public MainWindowController(MainWindow view) {
 		this.view = view;
@@ -28,7 +33,13 @@ public class MainWindowController implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				TeacherView v = new TeacherView();
-				v.setVisible(true);
+				dialog = new JDialog(view.getFrame(), v.getTitle(), Dialog.ModalityType.DOCUMENT_MODAL);
+				dialog.add(v);
+				dialog.pack();
+				dialog.setResizable(false);
+				dialog.setVisible(true);
+				dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			
 				new TeacherController(v);
 			}
 		});
@@ -36,21 +47,47 @@ public class MainWindowController implements ActionListener{
 		view.addGroupActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new GroupController(new GroupView());
+				GroupView v = new GroupView();
+				dialog = new JDialog(view.getFrame(), v.getTitle(), Dialog.ModalityType.DOCUMENT_MODAL);
+				dialog.add(v);
+				dialog.pack();
+				dialog.setResizable(false);
+				dialog.setVisible(true);
+				dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			
+				new GroupController(v);
 			}
 		});
 		
 		view.addStudentActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new StudentController(new StudentView());
+				StudentView v = new StudentView();
+				dialog = new JDialog(view.getFrame(), "Example", true);
+				dialog.add(v);
+				dialog.pack();
+				dialog.setResizable(false);
+				dialog.setVisible(true);
+				dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			
+				//new StudentController(v);
+				v.buttonAdd(this);
+				v.buttonExit(this);
 			}
 		});
 		
 		view.addSubjectActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new SubjectController(new SubjectView());	
+				SubjectView v = new SubjectView();
+				dialog = new JDialog(view.getFrame(), v.getTitle(), Dialog.ModalityType.DOCUMENT_MODAL);
+				dialog.add(v);
+				dialog.pack();
+				dialog.setResizable(false);
+				dialog.setVisible(true);
+				dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			
+				new SubjectController(v);
 			}
 		});
 		

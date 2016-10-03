@@ -19,14 +19,12 @@ public class StudentView extends JFrame {
 	private JLabel labelStudentFamily = new JLabel("Family");
 	private JLabel labelStudentFn = new JLabel("Fak. number");
 	private JLabel labelStudentGroup = new JLabel("Group");
-	private JLabel labelStudentMark = new JLabel("Mark");
 	
 	private JTextField textFieldStudentName = new JTextField("");
 	private JTextField textFieldStudentFamily = new JTextField("");
 	private JTextField textFieldStudentFn = new JTextField("");
 	
 	private JComboBox<Group> comboBoxStudentGroup = new JComboBox<Group>();
-	private JComboBox<Integer> comboBoxStudentMark = new JComboBox<Integer>();
 	
 	private JButton buttonAdd = new JButton("Add");
 	private JButton buttonExit = new JButton("Exit");
@@ -55,9 +53,6 @@ public class StudentView extends JFrame {
 		labelStudentGroup.setBounds(20, 110, 80, 25);
 		panel.add(labelStudentGroup);
 		
-		labelStudentMark.setBounds(20, 140, 80, 25);
-		panel.add(labelStudentMark);
-		
 		textFieldStudentName.setBounds(100, 20, 120, 23);
 		panel.add(textFieldStudentName);
 		
@@ -69,12 +64,6 @@ public class StudentView extends JFrame {
 		
 		comboBoxStudentGroup.setBounds(100, 110, 120, 23);
 		panel.add(comboBoxStudentGroup);
-		
-		comboBoxStudentMark.setBounds(100, 140, 120, 23);
-		for(int i=0; i<marks.length; i++) {
-			comboBoxStudentMark.addItem(marks[i]);
-		}
-		panel.add(comboBoxStudentMark);
 		
 		buttonAdd.setBounds(300, 20, 80, 30);
 		panel.add(buttonAdd);
@@ -99,15 +88,15 @@ public class StudentView extends JFrame {
 		return (String) comboBoxStudentGroup.getSelectedItem();
 	}
 	
-	public String getStudentMark() {
-		return (String) comboBoxStudentMark.getSelectedItem();
-	}
-
 	public void buttonAdd(ActionListener bAdd) {
 		buttonAdd.addActionListener(bAdd);
 	}
-	
+  
 	public void buttonExit(ActionListener bExit) {
 		buttonExit(bExit);
+	}
+	
+	public JFrame getFrame() {
+		return this;
 	}
 }
