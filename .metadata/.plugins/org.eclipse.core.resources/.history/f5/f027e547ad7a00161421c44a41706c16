@@ -1,8 +1,0 @@
-package view;
-
-import javax.swing.JLabel;
-
-public class TeacherView {
-	private JLabel labelTeacherName = new JLabel("»ме");
-	private JLabel labelTeacherFamily
-}

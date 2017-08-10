@@ -1,8 +1,0 @@
-package view;
-
-import javax.swing.JMenu;
-
-public class MainWindow {
-	private JMenu mainMenu;
-	
-}
