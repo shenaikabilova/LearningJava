@@ -10,7 +10,6 @@ public class Ex1 {
     }
 
     static void add(int a, int b){
-        int sum = a+b;
-        System.out.print(a + " + " + b + " = " + sum);
+        System.out.print(a + " + " + b + " = " + (a+b));
     }
 }
