@@ -7,10 +7,11 @@
         <artifactId>Java</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>IT_Talents</artifactId>
+    <groupId>student</groupId>
+    <artifactId>student</artifactId>
+
     <packaging>jar</packaging>
 
     <build>

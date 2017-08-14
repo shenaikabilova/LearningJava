@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>LearningJava</groupId>
+    <groupId>Java</groupId>
     <artifactId>Java</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -12,6 +12,7 @@
     <modules>
         <module>LearningJava</module>
         <module>IT_Talents</module>
+        <module>Student</module>
     </modules>
 
     <dependencyManagement>
@@ -25,6 +26,11 @@
             <dependency>
                 <groupId>LearningJava</groupId>
                 <artifactId>LearningJava</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>student</groupId>
+                <artifactId>student</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
